@@ -17,6 +17,7 @@ rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/* &&\
 ln -s /usr/bin/awk /bin/awk &&\
 mkdir /var/lock/subsys &&\
 chmod 755 /sbin/chkconfig &&\
+chown oracle:dba /u01/app/oracle/ -R &&\
 /oracle-install.sh
 
 # see issue #1
